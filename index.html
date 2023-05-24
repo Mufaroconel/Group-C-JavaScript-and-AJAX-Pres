@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and Ajax</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+    
+    <div id="header">
+        <nav>
+            <img src="/logo.png" width="400px" height="100px" alt="Group C logo" class="logo" >
+            
+            <span id="atags">
+                <a href="#container-heading">JavaScript</a>
+                <a href="#basicconcnav">Basic-Concept</a>
+                <a href="#contr">Control Execution</a>
+                <a href="#misc">Miscellaneous</a>
+                <a href="#formprocnav">Form Processing</a>
+                <a href="#popupnav">pop-up</a>
+                <a href="#ajaxnav">AJAX</a>
+                <a href="#withoutajaxnav">Life Without AJAX</a>
+                <a href="#ajaxcodingnav">AJAX Coding</a>
+                <a href="#withajaxnav">Life life-with-ajax</a>
+                <a href="#presenters">Presenters</a>
+            </span>
+            
+            <div id="atags">
+                
+            </div>
+        </nav>
+    </div>
+    <div id="testing">
+     </div>
+    <div class="container">
+        <div id="container-heading">
+            <h1>JavaScript and Ajax</h1>
+        </div>
+        <div id="java-ajax-intro">
+        <p>
+            <ul>
+                <li>JavaScript and AJAX(Asynchronous JavaScript and XML) are two technologies that are commonly used together 
+                    in web development .
+                </li>
+                <li>
+                    Javascript is a programming language that is used to add interactivity and dynamic 
+            behaviour to web pages while AJAX is a set of techniques that allow web pages to update content without 
+            requiring the entire page to be reloaded. 
+                </li>
+            </ul>
+             
+        </p>
+        
+        </div>
+        
+        <div class="java-script">
+            <h1>JavaScript</h1>
+            <div id="introduction">
+                <span id="basicconcnav"></span>
+                <h2>Introduction</h2>
+            </div>
+                        <div id="javascript">
+                <p>
+                    JavaScript is a client-side scripting language that is used to enhance the functionality of web 
+                    pages. It is used to create interactive effects, validate forms, and modify the content of web
+                    pages. JavaScript code is executed by the web browser, and it can be included in the HTML code
+                    of a web page or included as a separate file.
+                </p>
+            </div>
+            
+            <div id="basic-concept">
+                <h2>Basic Concepts</h2>
+            <p>
+                JavaScript includes many basic concepts, such as variables, data types, operators, loops, functions,
+                and objects. Variables are used to store data, while data types define the type of data that can be
+                stored in a variable. Operators are used to perform operations on data, while loops are used to 
+                repeat a set of instructions. Functions are used to group together a set of instructions, and 
+                objects are used to represent real-world objects and their properties.
+            </p>
+
+            <div id="variables">
+                <h2>Variables</h2>
+                <p id="variables-paragraph">
+                    In JavaScript variables are used to store data of different types, and the datatype of a variable
+                    can change during runtime. Varirables are declared using the keywords <span id="bold">var, let or const.
+                    <ul>
+                        <li>
+                            <span id="bold">Var</span> is the old way of declaring variables and is still supported,
+                        </li>
+                        <li>
+                            <span id="bold">let</span>  
+                            is used to declare variables that can be reassigned
+                        </li>
+                        <li>
+                            <span id="bold">const</span>  is used to declare variables that cannot be reassigned.
+                        </li>
+                    </ul>
+                   
+                </p>
+            </div>
+            <div id="data-types">
+                <h2>Data Types</h2>
+                <ol>
+                    <li>Primitive data types - These include:</li>
+                    <ul>
+                        <li> number - for both floating-point and integer numbers. </li>
+                            <li> string - for text values.</li>
+                            <li>boolean - for true/false values.</li>
+                            <li>null - for the absence of any object value.</li>
+                            <li> undefined - for the absence of any value.</li>
+                    </ul>
+                    <li>Complex data types - These include:</li>
+                    <ul>
+                        <li>object - for more complex data structures which can store a collection of values.</li>
+                        <li>function - for code that can be invoked later.</li>
+                    </ul>
+                    <li>Special data type - These Include</li>
+                    <ul>
+                        <li>symbol - for creating unique identifiers for objects</li>
+                    </ul>
+                </ol>
+            </div>
+            <div id="Loops">
+                <h2>Loops</h2>
+                <p>JavaScript loops can be used to repeat a block of code multiple times, and they can be used in conjunction with HTML to add
+                    dynamic functionality to a web page. Here are some examples of JavaScript loops and how they can be used with HTML:
+                </p>
+                <p>
+                    <ol>
+                        <li id="list">for loop: a for loop can be used to execute a block of code a specified number of times. For example, the
+                             following code uses a for loop to create an ordered list of numbers in an HTML file:
+                        </li>
+                        <span id="italic">
+                            <p id="for-loop">
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;ol id="numbers"&gt; &lt;/ol&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;script&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          var i;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          for (i = 1; i <= 10; i++) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            document.getElementById("numbers").innerHTML += "&lt;li&gt;" + i + "&lt;/li&gt;";<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          } <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          &lt;/script&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>
+                                &nbsp;&nbsp;&nbsp;  &lt;/body&gt;<br>
+                                  &lt;/html&gt;<br>
+                            </p>
+                        </span>
+                            <button onclick=forloopfunction() >Execute For Loop</button>
+                            <div id="for-loop-result-text">
+                                    <ol id="numbers"></ol>
+                            </div>
+
+                        <li id="list">while loop: a while loop can be used to execute a block of code while a certain condition is
+                             true. For example, the following code uses a while loop to create a dropdown list of states in an HTML file:
+                        </li>
+                        <span id="italic">
+                            <p id="loops">
+                                <p id="while-loop">
+                                    &lt;!DOCTYPE html&gt; <br>
+                                    &lt;html&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select id="states"&gt;&lt;/select&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  var states = ["Alabama", "Alaska", "Arizona", "Arkansas"];<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  var i = 0;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  while (i < states.length) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    var option = document.createElement("option");<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    option.text = states[i];<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    document.getElementById("states").add(option);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    i++;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  } <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                                    &lt;/html&gt;<br>
+                                    </p>
+                        </span>
+                        
+                        </p>
+                        <button onclick=whileloopfunction()>Execute While Loop</button>
+                        <select id="states"></select>
+                        
+                        <li id="list">forEach loop: a forEach loop can be used to execute
+                             a block of code for each element in an array. For example,
+                              the following code uses a forEach loop to create a list of
+                               colors in an HTML file:
+                        </li>
+
+                        <span id="italic">
+                            <p id="loops">
+                
+                                <p id="for-each-loop">
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul id="colors"&gt;&lt;/ul&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+           
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  var colors = ["red", "green", "blue"];<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  colors.forEach(function(color) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    var li = document.createElement("li");<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    li.textContent = color;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    document.getElementById("colors").appendChild(li);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  });<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                                    &lt;/html&gt;<br>
+                                </p>
+                              
+                            </p>
+                        </span>
+                        
+                        <button onclick=foreachloopfunction()>Execute ForEach Loop</button>
+                        <ul id="colors"></ul>
+                    </ol>
+                </p>
+            </div>
+            <div id="functions">
+                <h2>Functions</h2>
+                <p>
+                    In JavaScript, a function is a block of code that can be defined and executed independently. Functions
+                     are typically used to perform a specific task or calculation and can take input parameters and return
+                      output values. Here are the steps to defining a function in JavaScript:
+                </p>
+                <ol>
+                    <li>Use the function keyword followed by the name of the function.</li>     
+                    <li>Define any required parameters inside parentheses after the function name.</li>    
+                    <li>Write the code that you want the function to execute inside the curly braces.</li>
+                    <li>(Optional) Use the return keyword followed by a value if you want the function to return a value.</li>
+                </ol>
+               
+                <span id="italic">
+                    <p id="loops">
+                        <p id="functionparagraph">
+                            To create a function, we use function() declaration, like: <br>
+                            &nbsp;&nbsp;<span style="color: red;" >
+                            &nbsp;&nbsp;    function name( ){ <br>
+                            &nbsp;&nbsp;        // function...body <br>
+                            &nbsp;&nbsp;        } <br>
+                            &nbsp;&nbsp;</span> 
+                            &nbsp;&nbsp;    // function example <br>
+                            &nbsp;&nbsp;    function <span style="color:red ;">displayMessage( )</span> { <br>
+                            &nbsp;&nbsp;    document.write(“Welcome to JavaScript”);<br>
+                            &nbsp;&nbsp;    document.write(“Welcome to JavaScript”); }
+                        </p>
+                    </p>
+                </span>
+                <input type="text" id="welcomecallfunctiontextbox" name="textbox" placeholder="Enter A function Call Here">
+                <button onclick=callFunction() >Execute Function</button>
+                <span id="italic">
+                    <p>
+                        &lt;script&gt; <br>
+                         &nbsp; &nbsp;    function sum(a, b) { <br>
+                         &nbsp; &nbsp;    return a + b; } <br>
+                         &nbsp; &nbsp;    let result = sum(5, 10);  <br>
+                         &nbsp; &nbsp;      alert( result );   <br>
+                        &lt;/script&gt;
+                    </p>       
+                </span>
+                <h5>RESULT</h5>
+                <img src="sum().png" alt="">
+                
+            </div>
+            <div id="object">
+                <h2>Objects</h2>
+                <ul>
+                    <li>
+                        In JavaScript, objects are a fundamental data type that represent a collection of related data
+                     and functionality.
+                    </li>
+                    <li>
+                        Objects in JavaScript are collections of key-value pairs, where the key is
+                      a string and the value can be of any type, including other objects, arrays, functions, and
+                       primitive types.
+                    </li>
+                    <li>
+                        Objects can provide a way to organize and structure complex data and
+                        functionality in a manageable and efficient way.
+                    </li>
+                </ul>
+               
+                <p >
+                    You can create an object in JavaScript using either object literal notation or the object
+                     constructor function. Here is an example of an object created using object literal notation:
+                </p>
+
+                <span id="italic">
+                    <p >
+                        var person = {<br>
+                        &nbsp;&nbsp;    firstName: "John",<br>
+                        &nbsp;&nbsp;    lastName: "Doe",<br >
+                        &nbsp;&nbsp;    age: 25,<br >
+                        &nbsp;&nbsp;    fullName: <br > function() {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;      return this.firstName + " " + this.lastName;<br id="contr">
+                        &nbsp;&nbsp;&nbsp;    }<br>
+                        &nbsp;&nbsp;  };
+                    </p>
+                    <h5>Possible outputs depending on the Developer's request</h5>
+                    <img src="object.png" alt="">
+                </span>
+                
+            </div>
+            </div>
+            
+            
+            <div id="controlling-js-execution">
+                <h2>Controlling JavaScript Execution:</h2>
+                <ul>
+                    <li>
+                        JavaScript code can be executed in different ways, such as when a user clicks a button, when 
+                        a page loads, or when a user submits a form.
+                    </li>
+                    <li>
+                        JavaScript can be included in the HTML code of
+                        a web page using the &lt;script&gt; tag, and it can also be included as a separate file.
+                    </li>
+                    <li>JavaScript code can be executed synchronouslyor asynchronously.</li>
+                    <li>
+                        Synchronous execution means
+                        that the codeis executed in a sequential order, while asynchronous execution means that the
+                        code is executed in a non-sequential order.
+                    </li>
+                </ul>
+                <ol>
+                    <li>When a button is clicked: You can use an event listener to execute JavaScript code when a button is clicked. Here's an example:</li>
+                        <ul> <br>
+                            <li>HTML: <br>
+                            <span id="italic">
+                                <p>&lt;button id="myButton"&gt;Click me&lt;/button&gt;</p>
+                            </span>
+                            </li><br>
+                            <button id="myButton" onclick="mybuttonfunction()">Click me</button> <br>
+                            
+                            <br><li>
+                                JavaScript: <br><br>
+                                <span id="italic">
+                                    <p>
+                                        const buttonElement = document.getElementById('myButton');
+                                buttonElement.addEventListener('click', function() {
+                                  // execute some code here
+                                });
+                                    </p>
+                                </span>
+                                 <br><br>
+                            </li>
+                        </ul>
+                    <li>When a page loads: You can execute JavaScript code when a page loads by adding your code to the window.onload event. Here's an example:</li> <br><br>
+                    <ul>
+                        <li>HTML: <br><br>
+                            <span id="italic">
+                                <p>
+                                    &lt;body&gt;<br>
+                                    &nbsp;&nbsp;      &lt;!-- Your page content here --&gt;<br>
+                                    &nbsp;&nbsp;      &lt;script src="your-script.js"&gt;&lt;/script&gt;<br>
+                                        &lt;/body&gt; <br><br>
+                                      <li>JavaScript(in "your-script.js"):
+                                        
+                                      <span id="italic">
+                                        <p>
+                                            window.onload = function() {<br><br>
+                                                // execute some code here<br>
+                                               };
+                                        </p>
+                                      </span>
+                                </p>
+                            </span>
+                           <br>
+                        
+                            </li>
+                           
+                    </ul>
+                    <br><br><li>When a form is submitted: You can use an event listener to execute JavaScript code when a form is submitted. Here's an example:</li>
+                    <ul>
+                        <li >
+                            HTML: <br><br>
+                            <span id="italic">
+                                <p>
+                                    &lt;form id="myForm"&gt; <br>
+                                    &nbsp;&nbsp;    &lt;!-- Your form fields here --&gt; <br>
+                                    &nbsp;&nbsp;    &lt;input type="submit" value="Submit"&gt; <br>
+                                      &lt;/form&gt;
+                                </p>
+                              </span>
+                            <br>
+                        </li><br id="italic">
+                        <li> 
+                            JavaScript: <br>
+                            <span >
+                                <p>
+                                    const formElement = document.getElementById('myForm');<br id="misc">
+                            formElement.addEventListener('submit', function(event) {<br>
+                            &nbsp;  event.preventDefault(); // prevent the default form submit behavior<br>
+                            &nbsp;  // execute some code here<br>
+                            });
+                                </p>
+                              </span>
+                              <form id="myForm">
+                                <!-- Your form fields here -->
+                                <input type="submit" value="Submit">
+                             </form> 
+                           <br>
+                        </li>
+                    </ul>
+                </ol>
+            </div>
+            <div id="miscellaneous-features">
+                <h2> Miscellaneous Features: </h2>
+
+                <ul>
+                    <li>
+                        JavaScript includes many miscellaneous features, such as error handling, debugging, and 
+                    regular expressions.
+                    </li>
+                    <ol>
+                        <li>
+                            Error handling is an essential aspect of any programming language, including JavaScript.
+                             In JavaScript, errors can occur due to various reasons, such as invalid input, network
+                             failures, or unexpected behavior. Here are some ways to handle errors in JavaScript:
+                        </li>
+                        <ul>
+                            <br><br>
+                        <li>
+                              try-catch Block: <br><br> The try-catch block is used to handle synchronous errors in JavaScript.
+                             The try block contains the code that might throw an error, and the catch block is used
+                              to handle the error. If an error occurs in the try block, the catch block is executed,
+                               and the error is caught, preventing it from causing the program to crash. <br><br>
+                              Example: <br>
+                              <span id="italic">
+                                <p>
+                                    try {  <br>
+                                        // Code that might throw an error <br>
+                                      } <br> catch (error) { <br>
+                                        // Handle the error <br>
+                                      } 
+                                </p>
+                                <h5>Function that uses try and catch to handle errors in JavaScript: </h5>
+                                <p>
+                                    function divide(a, b) { <br>
+                                    &nbsp;&nbsp;    try { <br>
+                                    &nbsp;&nbsp;&nbsp;      if (b === 0) { <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;        throw 'Error: Cannot divide by zero'; // throws an error if b is zero <br>
+                                    &nbsp;&nbsp;&nbsp;      } else { <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;        return a / b; // returns the result of a divided by b <br>
+                                    &nbsp;&nbsp;&nbsp;      } <br>
+                                    &nbsp;&nbsp;&nbsp;    } catch (error) { <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;      console.log(error); // logs the error message <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;      return null; // returns null if there is an error <br>
+                                    &nbsp;&nbsp;&nbsp;    } <br>
+                                    &nbsp;&nbsp;  } <br>
+                                </p>
+                              </span>
+     
+                              <br>
+                              <li>
+                                Promise.catch(): <br><br> The Promise.catch() method is used to handle asynchronous errors
+                                 in JavaScript. When a Promise is rejected, the catch() method is called, and the error is caught and handled. <br><br>
+                                Example:
+                                <span id="italic">
+                                    <p>
+                                        asyncFunction() <br>
+                                        &nbsp;  .then(result => {  <br>
+                                        &nbsp;&nbsp;    // Handle the result <br>
+                                        &nbsp;  }) <br>
+                                        &nbsp;  .catch(error => { <br>
+                                        &nbsp;&nbsp;    // Handle the error <br>
+                                        &nbsp;  });
+                                    </p>
+                                  </span>
+      
+                                <br><br>
+                                
+      
+                                 <br> <br><br>
+                                </li>
+                             </li>
+                             </li>
+                             <li>
+                                throw Statement: <br><br> The throw statement is used to throw custom errors in JavaScript. You can create a new instance of the Error object and throw it to indicate an error in your code.
+                                <br><br> Example: <br><br>
+                                <span id="italic">
+                                    <p>
+                                        function divide(a, b) { <br>
+                                            &nbsp;&nbsp;  if (b === 0) { <br>
+                                            &nbsp;&nbsp;    throw new Error("Cannot divide by zero"); <br>
+                                            &nbsp;&nbsp;  } <br>
+                                            &nbsp;&nbsp;  return a / b; <br>
+                                            } <br>
+                                            try { <br>
+                                                &nbsp;&nbsp;  divide(10, 0); <br>
+                                                } catch (error) { <br>
+                                                &nbsp;&nbsp;  console.log(error.message); // Output: Cannot divide by zero <br>
+                                                } <br>
+                                    </p>
+                                  </span>
+      
+                                 <br><br>
+      
+                                
+                                window.onerror Event: The window.onerror event is fired when an unhandled error occurs in JavaScript. You can use this event to handle errors globally and log them to the console or send them to a server. <br>
+                                Example: <br><br>
+
+                                <span id="italic">
+                                    <p>
+                                        window.onerror = function(message, source, line, column, error) { <br>
+                                            &nbsp;&nbsp;  console.log(message); // Output: Something went wrong <br>
+                                            &nbsp;&nbsp;  console.log(source); // Output: http://example.com/js/script.js <br>
+                                            &nbsp;&nbsp;  console.log(line); // Output: 10 <br>
+                                            &nbsp;&nbsp;  console.log(column); // Output: 5 <br>
+                                            &nbsp;&nbsp;  console.log(error); // Output: Error: Something went wrong
+                                            };
+                                    </p>
+                                  </span>
+      
+                                 <br><br>
+                               <li>
+                                By using these error handling techniques, you can ensure that your JavaScript code is more robust and resilient to errors.                          
+                               </li> 
+                             </li>
+                        <br><br>
+                        </ul>
+                        <li>
+                            Debugging is used to identify and fix errors.  <br>
+                            Debugging is an important part of the software development process, and JavaScript provides several tools and
+                             techniques to help you debug your code. Here are some common techniques for debugging in JavaScript: <br><br>
+
+                            <ul>
+                                <li>
+                                    Console.log(): <br><br> The console.log() method is the most basic and widely used debugging technique in JavaScript. It allows you to print variables, objects, and other data to the console, so you can see what your code is doing.
+                                    <br><br> Example: <br><br>
+
+                                    <span id="italic">
+                                        <p> let x = 10;<br>
+                                            console.log(x);<br>
+                                           <p></p> <br><br>
+                                        </p>
+                                      </span>
+                                    
+                          <br><br>
+                                </li>
+                            </ul>
+                            
+                            
+
+                            Debugging Tools: Most modern web browsers, such as Google Chrome, Firefox, and Safari, have built-in debugging tools that allow you to inspect and debug your JavaScript code. These tools provide a range of features, including breakpoints, call stacks, watches, and more.
+                            <br><br> Example: <br><br>
+
+                            In Google Chrome, you can open the Developer Tools by pressing F12 or Ctrl+Shift+I (Windows, Linux) or Cmd+Opt+I (Mac). Once the Developer Tools are open, you can navigate to the Sources tab to set breakpoints, inspect variables, and more.
+                           <ul>
+                               
+                                <br> <br><li> Debugger Statement: <br> <br>
+                                The debugger statement is a powerful debugging tool that allows you to pause the execution of your code at a specific point and inspect the values of variables and other data. When the debugger statement is encountered, the browser will open the debugger, and you can step through your code line by line.
+                               Example: <br><br>
+                               <span id="italic">
+                                <p>
+                                    function add(a, b) { <br>
+                                        &nbsp;debugger; <br>
+                                        &nbsp;returna + b; <br>
+                                       } 
+                                       <br><br>
+   
+                               let result = add(10, 20); <br>
+                               console.log(result); <br>
+                                </p>
+                              </span>
+
+                              <img src="debugger.png"  style="border-radius: 10px;" width="500px" height="350px" alt="">
+   
+                               
+                                    </li>
+                           </ul> <br><br>
+                           When the above code is executed, the debugger will pause the execution at the debugger; statement, allowing you to inspect the values of variables and other data.
+                            Conditional Breakpoints: Conditional breakpoints allow you to set breakpoints that only trigger when a certain condition is met. This can be useful when you want to debug a specific part of your code that is only executed under certain conditions.
+                            <br><br> Example: <br><br>
+                            <span id="italic">
+                                <p>
+                                    
+                            let i = 0; <br>
+                            while (i < 10) { <br>
+                            &nbsp;  i++; <br>
+                            &nbsp;  console.log(i); <br>
+                            }
+                                </p>
+                              </span>
+                            
+ <br><br>
+                            In the above code, you can set a conditional breakpoint on the console.log(i); statement and set the condition to i === 5. <br> This will cause the debugger to pause the execution of the code when i is equal to 5, allowing you to inspect the values of variables and other data at that point in the code. <br><br>
+                            <br><img src="debuggerwhilefunction.png" alt=""><br><br>
+                            <ul> 
+                                <img src="debuggerwhileloop.png"  width="800px" height="500px" style="border-radius: 10px;" alt="">
+                                
+                            </ul>
+                           </li>
+                           <br><br>
+                        <li>
+                            Regular expressions, also known as regex or regexp, are patterns used to match character combinations in strings. JavaScript has built-in support for regular expressions, which allows you to perform powerful string manipulation and validation operations. Here's how you can use regular expressions in JavaScript:
+
+                            <br><br> 
+                            <ul>
+                                <li>Creating a Regular Expression: In JavaScript, you can create a regular expression by enclosing a pattern in forward slashes (/). You can also pass a regular expression pattern as a string to the RegExp constructor.
+                                    <br><br> Example: <br><br>
+
+                                    <span id="italic">
+                                        <p>
+                                            let pattern = /hello world/; <br>
+                                            let regex = new RegExp("hello world"); <br><br>
+                                        </p>
+                                      </span>
+
+                                      <img src="createregex.png"  style="border-radius: 10px;" alt="">
+        
+                                   
+                                </li> 
+                                 <li>
+                                    Matching a String: <br> You can use the test() method to check if a string matches a regular expression pattern. The test() method returns true if the string matches the pattern, and false otherwise.
+                                    <br> <br> Example:  <br> <br>
+                                    <span id="italic">
+                                        <p>
+                                            let pattern = /hello world/; <br>
+                                    let str = "hello world"; <br>
+                                    console.log(pattern.test(str)); // Output: true <br><br>
+                                        </p>
+                                      </span>
+        
+                                   <img src="testpattern.png"  style="border-radius: 10px;" alt="">
+                                    
+                                 </li>
+                            </ul>
+
+                           <ul>
+                                <li>
+                                    Using Special Characters: Regular expressions in JavaScript use special characters to match specific patterns. For example, the dot (.) character matches any single character except newline, and the asterisk (*) character matches zero or more occurrences of the preceding character.
+                            <br> <br> Example: <br> <br>
+                            <span id="italic">
+                                <p>
+                                    let pattern = /a.*z/; <br>
+                            let str = "abcz"; <br>
+                            console.log(pattern.test(str)); // Output: true <br><br>
+                                </p>
+                              </span>
+
+                              <img src="testpattern2.png" style="border-radius: 10px;"  alt="">
+
+                            
+                                </li>
+
+                            <li>
+                                Character Classes: Character classes allow you to match a set of characters. For example, [abc] matches a, b, or c.
+                             <br> <br>  Example: <br>  <br>
+                             <span id="italic">
+                                <p>
+                                    let pattern = /[abc]/;<br>
+                                    let str = "def";<br>
+                                    console.log(pattern.test(str)); // Output: false<br><br>
+                                </p>
+                              </span>
+
+                              <img src="testpattern3.png" style="border-radius: 10px;"  alt="">
+
+                            
+                            
+                            </li>
+                            <li>
+                                Quantifiers: Quantifiers allow you to specify how many times a character or character class should appear in the string. For example, the plus (+) character matches one or more occurrences of the preceding character.
+                            <br>  <br>  Example: <br>  <br>
+                            <span id="italic">
+                                <p>
+                                    let pattern = /a+/; <br>
+                            let str = "aaab"; <br>
+                            console.log(pattern.test(str)); // Output: true <br><br>
+                                </p>
+                              </span>
+
+                            <img src="testPattern4.png"  style="border-radius: 10px;" alt="">
+                            
+                            </li>
+
+                            <li>
+                                Groups: Groups allow you to group multiple characters or character classes together and apply quantifiers to them. For example, (abc)+ matches one or more occurrences of the group abc.
+                             <br> <br>  Example:  <br> <br>
+                             <span id="italic">
+                                <p>
+                                    let pattern = /(abc)+/; <br>
+                                    let str = "abcabcabc"; <br>
+                                    console.log(pattern.test(str)); // Output: true <br><br>
+                                </p>
+                              </span>
+
+                              <img src="testPattern5.png"  style="border-radius: 10px;" alt="">
+                            
+                            </li>
+
+                            <li>
+                                Flags: Flags are used to modify the behavior of a regular expression. For example, the g flag is used to perform a global search, and the i flag is used to perform a case-insensitive search.
+                             <br>  <br>  Example:  <br> <br id="formprocnav">
+                             <span id="italic">
+                                <p >
+                                    let pattern = /hello/gi;
+                                    let str = "Hello World! hello world!"; <br >
+                                    console.log(str.match(pattern)); // Output: ["Hello", "hello"] <br>
+                                </p>
+                              </span>
+
+                              <img src="testPattern6.png"  style="border-radius: 10px;" alt="">
+
+                            Regular expressions can be a powerful tool for string manipulation and validation in JavaScript. By understanding the syntax and patterns of regular expressions, you can write more efficient and effective code.
+                      
+                            </li>
+                            </ul>
+                            
+                            </li>
+                    </ul>
+                    </ol>
+                
+            </div>
+            <div id="javascript-form-processing">
+                <h2>JavaScript and Form Processing:</h2>
+                <ul>
+                    <li>
+                        JavaScript can be used to validate forms and provide feedback to users without requiring the entire page to be reloaded. </li>
+                    <li>
+                        JavaScript
+                        can be used to check if a form has been completed correctly, and it can also be used 
+                        to provide feedback to users if there are errors in the form.
+                    </li>
+                   <li>
+                    JavaScript can also be 
+                    used to submit forms without requiring the entire page to be reloaded.
+                   </li>
+                   <li>
+                    Here are the steps to validate a form and provide feedback to users:
+                   </li>
+                   
+                    <br><li>Add Event Listener: Add an event listener to the form submit button to handle the form submission. You can use the addEventListener() method to add an event listener to the submit button.
+                   <br> Example: <br>
+                    <span id="italic">
+                        <p>
+                            Copy <br>
+                    let form = document.querySelector("form"); <br>
+                    let submitButton = document.querySelector("button[type='submit']"); <br>
+     <br>
+                    submitButton.addEventListener("click", function(event) { <br>
+                      event.preventDefault(); <br>
+                      validateForm(); <br>
+                    }); <br>
+                        </p>
+                      </span>
+
+                    <p>This code is useful when you want to prevent a form from being submitted until it has been validated. By preventing the form from submitting, you have greater control over how the form data is 
+                        processed and can ensure that it meets your specific requirements before allowing it to be submitted.</p>
+                    </li>
+                </ul>
+               
+                <p>
+                 </p>
+
+                 <ul>
+                    <br>
+                    <li>
+                        Validate Form: Write a validateForm() function to check if the form has been completed
+                     correctly. You can use regular expressions to validate the form inputs, such as email addresses,
+                      phone numbers, and zip codes. If the form inputs are not valid, display an error message and prevent
+                       the form from being submitted.
+                       <br> <br> Example: <br>
+                    <span id="italic">
+                       <p>
+                          <br>
+      <br>
+                     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; <br>
+                     if (!emailRegex.test(email)) { <br>
+                       showError("Please enter a valid email address"); <br>
+                       return false; <br>
+                     } <br> <br>
+   
+                     let phoneRegex= /^\d{10}$/; <br>
+                     if (!phoneRegex.test(phone)) { <br>
+                       showError("Please enter a valid phone number"); <br>
+                       return false; <br>
+                     } br
+                     Copy <br>
+                     function validateForm() { <br>
+                       let name = document.querySelector("#name").value; <br>
+                       let email = document.querySelector("#email").value; <br>
+                       let phone = document.querySelector("#phone").value; <br>
+        <br>
+                      if (!name) { <br>
+                         showError("Please enter your name"); <br>
+                         return false; <br>
+                       }
+                       <br>
+                       <br>
+
+                       
+
+         <br>
+                        <br>
+                        
+         <br> 
+                        
+                        // If all inputs are valid, submit the form <br>
+                        submitForm(); <br>
+                      } <br>
+                       </p>
+                     </span>
+                     
+                    </li>
+                    <form>
+                       
+                    <li>
+                        Show Error: Write a showError() function to display error messages to users. You can use DOM manipulation to add an error message to the form, such as creating a new element and appending it to the form.
+                 <br>Example: <br>
+                 <span id="italic">
+                    <p>
+                        <br>
+                Copy <br>
+                function showError(message) { <br>
+                  let errorElement = document.createElement("div"); <br>
+                  errorElement.classList.add("error"); <br>
+                  errorElement.innerText = message; <br>
+   <br>
+                  let form = document.querySelector("form"); <br>
+                  form.appendChild(errorElement); <br>
+                } <br>
+                    </p>
+                  </span>
+                 
+                </li>
+                <br>
+                <li>
+                     Submit Form: Write a submitForm() function to submit the form data to the server. You can use the XMLHttpRequest object or the fetch() method to send the form data to the server.
+                Example: <br>
+ <br>
+                 <span id="italic">
+                    <p>
+                        Copy <br>
+                function submitForm() { <br>
+                  let form = document.querySelector("form"); <br>
+                  let formData = new FormData(form); <br>
+   <br>
+                 fetch("submit.php", { <br>
+                   method: "POST", <br>
+                    body: formData <br id="popupnav">
+                  }) <br>
+                 .then(response => { <br >
+                    // Handle the server response <br>
+                  }) <br >
+                  .catch(error => { <br  >
+                    console.error(error); <br >
+                  }); <br>
+                } <br>
+                    </p>
+                  </span>
+                
+                
+                </li>
+                 </ul>
+                </div>
+            <div id="pop-up-boxes">
+                <h2>Pop-up Boxes:</h2>
+                <ul>
+                    <li>
+                        JavaScript provides several types of pop-up boxes that you can use to display messages and prompts to users. Here's how you can use JavaScript to display alert boxes, confirm boxes, and prompt boxes: <br>
+                        <br>
+                    </li>
+                    <li>
+                        Alert Boxes: Alert boxes are used to display a message to users. You can use the window.alert() method to display an alert box.
+                        <br>Example: <br>
+                        <br>
+                        <span id="italic">
+                           <p>
+                               window.alert("Hello World!"); <br>
+                           </p>
+                         </span>
+                         <img src="windowalert.png" alt="">
+                    </li>
+                    <li>
+                        Confirm Boxes: Confirm boxes are used to ask users for confirmation before proceeding with an action. You can use the window.confirm() method to display a confirm box. The confirm box returns true if the user clicks the OK button, and false if the user clicks the Cancel button.
+                 <br>Example: <br>
+                 <br>
+                 <span id="italic">
+                    <p>
+                        let result = window.confirm("Are you sure you want to delete this item?");
+                 <br>if (result) { <br>
+                  // Delete the item <br>
+                } else { <br>
+                  // Do nothing <br>
+                } <br>
+                </p>
+            </span>
+            <img src="deletefunction.png" alt=""><br>
+            <img src="confirmwindow.png" alt="">
+
+             </li>
+                    <li>
+                        Prompt Boxes: Prompt boxes are used to ask users for input. You can use the window.prompt() method to display a prompt box. The prompt box returns the user's input as a string, or null if the user clicks the Cancel button.
+                        <br>Example: <br>
+                        <br>
+                    </li> 
+                     
+                <span id="italic">
+                    <p>
+                    let name = window.prompt("Please enter your name:");
+                     <br >if (name) { <br>
+                      window.alert("Hello, " + name + "!"); <br>
+                    } else { <br > 
+                      window.alert("You didn't enter your name."); <br>
+                    } <br >
+                        </p>
+                      </span>
+             </li>
+                </ul>
+                <img src="sayhello.png" style="border-radius: 10px;"  alt=""><br>
+            </div>
+            <button onclick="sayHelloo()">Say Hello</button> <br><br>
+
+            <img src="whatsyourname.png" style="border-radius: 10px;"  alt=""> <br><br>
+
+            <img src="youdidntenteryourname.png" style="border-radius: 10px;"  alt=""> <br><br>
+            <span id="ajaxnav"></span> 
+             <img src="youdidntenteryourname.png" style="border-radius: 10px;"  alt=""> <br><br>
+
+            
+        </div>
+        <div class="ajax">
+            <h1>AJAX</h1>
+            <div id="ajax-introduction">
+                <h2>Introduction</h2>
+                <p>
+                    AJAX is a set of techniques that allow web pages to update content without requiring the 
+                    entire page to be reloaded. AJAX uses JavaScript and XML to communicate with the server
+                    and update the content of a web page. AJAX can be used to create dynamic web applications 
+                    that provide a better user experience.
+                    
+                    <h2>Full explanation on how Asynchronous JavaScript and XML works</h2>
+                    <p>
+                    To understand how Ajax works, it's important to remember that it has two key components: <span id="bold"> the web browser and the web server.</span>
+                    <span id="withoutajaxnav"></span><br>The user interacts with the web browser and sends a request to the web server using JavaScript. The XMLHttpRequest object sends an asynchronous request to the server to retrieve data. When the server responds with data, the XMLHttpRequest object receives it and updates the web page dynamically with JavaScript.
+                    AJAX-based applications often take advantage of popular programming interfaces like XML, HTML, and XSLT for data interchange and manipulation.
+                    <br>Some key advantages of AJAX are that it allows the creation of dynamic websites that are faster and more responsive than traditional websites that must reload the entire page with each change in content
+                    </p>
+                </p>
+                
+            
+            </div>
+            <div id="life-without-ajax">
+                <h2>Life without AJAX:</h2>
+                <p>
+
+                    <ul>
+                        <br>
+                        <li>
+                            In the past, web pages had to be reloaded every time a user interacted with the page, which
+                             was slow and often resulted in a poor user experience.
+                        </li><br>
+                        <li> Without AJAX, web pages could not 
+                    update content dynamically, and users had to wait for the entire page to reload to see 
+                    updated content.<br></li>
+
+                    <li>
+                        <span id="bold"> So </span>                 
+                        Life without Ajax would mean that web pages would have to be updated using traditional methods that require the entire page to reload with each change in content. 
+                        This would make web applications slower and less responsive to user actions.
+                    </li>
+
+                    <li>
+                        <br>Without Ajax, web developers would have to rely on other techniques for accessing web servers from a web page, such as server-side rendering or client-side rendering using technologies like Angular or React.
+                    These techniques can still provide dynamic content and interactivity but may not be as fast or efficient as Ajax
+                    </li>
+                    <span id="ajaxcodingnav"></span> <li>
+                        <br>Without Ajax, web developers would also need to rely more heavily on server-side processing, which could lead to increased server load and bandwidth usage
+                    </li>
+                    <li>
+                        <br>Overall, life without Ajax would mean slower, less responsive web applications that rely more heavily on server-side processing and traditional page reloading techniques.
+                    </li>
+                    </ul>
+                    
+                    
+                     
+                    
+                    
+                   
+                </p>
+            </div>
+            <div id="ajax-coding">
+                <h2>AJAX Coding:</h2>
+                <p>
+
+                    <ul>
+                        <li>
+                            AJAX coding involves using JavaScript to create requests to the server and update the content 
+                    of a web page with the response.
+                        </li>
+                       
+                         <div id="ajaxhttresponse">
+                            <div id="ajaxxmlhttprequest">
+                                <ol>
+                                   <li>
+                                       An event occurs in a web page (the page is loaded , a button is clicked)
+                                       <ul>
+                                           <li>In the code snippet, an event is assumed to have occurred, so it just initiates the request immediately.
+                                           </li>
+                                       </ul>
+                                   </li>
+                                   <li>
+                                       An XMLHttpRequest object is created by JavaScript
+                                       <ul>
+                                           <li>
+                                               This is shown in the first line of code where the XMLHttpRequest() object is created.
+                                           </li>
+                                       </ul>
+                                       
+                                   </li>
+                                   <li>
+                                       The server processes the request
+                                       <ul>
+                                           <li>
+                                               This happens on the server-side - it is not directly addressed in the code snippet.
+                                           </li>
+                                       </ul>
+                                       
+                                   </li>
+                                   <li>
+                                       The server sends a response back to the web page
+                                       <ul>
+                                           <li>
+                                               This is handled by the onload event, which performs an action when the response is received.
+                                           </li>
+                                       </ul>
+                                       
+                                   </li>
+                                   <li>
+                                       The response is read by JavaScript
+                                       <ul>
+                                           <li>
+                                               This is shown in the JSON.parse(xhr.responseText) line, where the .responseText property of the XMLHttpRequest object is parsed from JSON to JavaScript object.
+                                           </li>
+                                       </ul>
+                                       
+                                   </li>
+                                   <li>
+                                       Proper action (like page update) is performed by JavaScript
+                                       <ul>
+                                           <li>
+                                               This is shown in the document.getElementById('my-element').innerHTML = data.message line, where the content of an HTML element (my-element) is updated with the response data.
+                                           </li>
+                                       </ul>
+                                       
+                                   </li>
+                                </ol>
+                               </div>
+                            <div id="ajaxxmlhttprequestimage">
+                                <img src="ajaxxmlimage.png" style="border-radius:5px ;" alt="" >
+                            </div>
+                            
+                         </div><span id="withajaxnav"></span> <br><br><br>
+                        <div id="italic">
+                            <p>
+                                // Create a new XMLHttpRequest object <br>
+                                var xhr = new XMLHttpRequest(); <br>
+     <br>
+                                // Set up the request <br>
+                                xhr.open('GET', '/my-api-endpoint'); <br>
+     <br>
+                                // Set a callback function to run when the response is received <br>
+                                xhr.onload = function() { <br>
+                                &nbsp;  // Parse the JSON response into a JavaScript object <br>
+                                &nbsp;  var data = JSON.parse(xhr.responseText); <br>
+       <br>
+                                &nbsp;  // Update the content of a HTML element on the page with the data <br>
+                                &nbsp;  document.getElementById('my-element').innerHTML = data.message; <br>
+                                }; <br>
+     <br>
+                                // Send the request to the server <br>
+                                xhr.send(); <br>
+                              </p>
+                        </div>
+
+                    
+                        <div id="my-element"></div>
+                            
+                        
+                          
+
+                        <li>
+                            AJAX coding also involves handling errors and providing feedback 
+                    to the user.
+                        </li>
+                        <li>
+                            AJAX can be used to create a wide range of web applications, such as chat applications, 
+                            search engines, and online games. 
+                        </li> 
+
+                    </ul>
+                     
+                </p>
+                <p></p>
+                    
+                </p>
+                
+
+            </div>
+            
+            
+            <div id="life-with-ajax">
+                <h2>Life with AJAX:</h2>
+                <p>
+                    With AJAX, web pages can update content dynamically, providing a better user experience. Users no 
+                    longer have to wait for the entire page to reload to see updated content, and web applications 
+                    can be more responsive and interactive. AJAX has revolutionized web development and has enabled 
+                    the creation of many modern web applications. <br><br>
+
+                    <h3>Some of the benefits of life with AJAX include: </h3> <br>
+                    <ul>
+                        <li>Faster and more responsive pages: AJAX allows pages to load new content without requiring a full page refresh, which makes the pages feel faster and more responsive to user interactions.
+                        </li>
+                        <li>More dynamic and interactive user interfaces: With AJAX, developers can create more dynamic and interactive user interfaces that respond to user interactions in real-time. This has enabled the creation of rich, immersive web applications that rival desktop applications in terms of functionality and user experience.
+                        </li>
+                        <li>Reduced server load: Because AJAX allows pages to load new content without requiring a full page refresh, it reduces the load on the server by reducing the number of requests for full page refreshes.
+                        </li>
+                        <li>Improved user experience: With AJAX, users can interact with web applications in a more natural and intuitive way, without having to wait for the page to refresh every time new content is loaded.
+                        </li>
+                        <p>Overall, life with AJAX has transformed the web into a more dynamic, interactive, and user-friendly
+                             place. It has enabled the creation of rich, immersive web applications that are on par with desktop
+                              applications in terms of functionality and user experience.</p>
+                     </ul>
+                 </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="presenters">
+        <h1>PRESENTERS</h1>
+        <div id="mabhebhi">
+                <h2>Ladies</h2>
+            <div id="sarah">
+                <img src="sarah.jpeg" width="75px" height="75px"  alt="sarah" class="presentersfemaleimg">
+                <li>Sarah</li>
+                <li>R223665X</li>
+            </div> 
+            <div id="previey">
+                <img src="previey.png" width="75px" height="75px"  alt="spreviey" class="presentersfemaleimg">
+                <li>Previlage</li>
+                <li>R223600E</li>
+            </div> 
+            <div id="noku">
+                <img src="noku.png" width="75px" height="75px"  alt="noku" class="presentersfemaleimg">
+                <li>Nokutenda</li>
+                <li>R228141R</li>
+                
+            </div> 
+            <div id="anesu">
+                <img src="anesu.png" width="75px" height="75px"  alt="" class="presentersfemaleimg">
+                <li>Anesu</li>
+                <li>R223671N</li>
+                
+            </div> 
+        </div>
+        <div id="mafia">
+            <h2>Gents</h2>
+            <div id="mufaro">
+                <img src="Mufaro.png" width="75px" height="75px"  alt="mufaro" class="presentersimg">
+                <li>Mufaro</li>
+                <li>R223655C</li>
+                
+            </div> 
+        
+            <div id="admire">
+                <img src="vulkan.jpeg" width="75px" height="75px"  alt="admire" class="presentersimg">
+                <li>Admire</li>
+                <li>R223713D</li>
+               
+            </div>
+    
+            <div id="marlon">
+                <img src="Marlon.jpeg" width="75px" height="75px"   alt="marlon" class="presentersimg">
+                <li>Marlon</li>
+                <li>R223778N</li>
+                
+            </div>
+            <div id="chawaz">
+                <img src="chawaz.png" width="75px" height="75px"  alt="chawaz" class="presentersimg">
+                <li>Kuzivakwashe</li>
+                <li>R223591Z</li>
+                
+            </div>
+            <div id="macdonald">
+                <img src="Macdonald.jpeg"width="75px" height="75px"   alt="macdonald" class="presentersimg">
+                <li>Macdonald</li>
+                <li>R227820Q</li>
+                
+            </div>
+            
+            <div id="gmt">
+                <img src="GMT.jpeg" width="75px" height="75px"  alt="GMT" class="presentersimg">
+                <li>Tonderai</li>
+                <li>R228143F</li>
+             </div>
+             
+            <div id="crispen">
+                <img src="crispen.jpeg" width="75px" height="75px"  alt="crispen" class="presentersimg">
+                <li>Takudzwa</li>
+                <li>R223727R</li>
+                
+            </div>
+            <div id="swish">
+                <img src="swish.jpeg" width="75px" height="75px"  alt="swish" class="presentersimg">
+                <li>Nkosilathi</li>
+                <li>R228144C</li>
+            </div>
+            <div id="mj">
+                <img src="mj.png" width="75px" height="75px"  alt="mj" class="presentersimg">
+                <li>Munashe</li>
+                <li>R228204W</li>
+                
+            </div>
+            <div id="tana">
+                <img src="tana.png" width="75px" height="75px"  alt="tana" class="presentersimg">
+                <li>Tanatsiwa</li>
+                <li>R223692Y</li>
+                
+            </div>
+
+            <div id="ngoni">
+                <img src="ngoni.png" width="75px" height="75px"  alt="ngoni" class="presentersimg">
+                <li>Ngonidzashe</li>
+                <li>R207139Z</li>
+                
+            </div>
+        </div>
+        
+         </div>
+       
+
+</body>
+</html>
+
